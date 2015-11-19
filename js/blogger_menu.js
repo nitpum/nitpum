@@ -122,7 +122,7 @@ $(function(){
                         $('#cssmenu').css('display', 'block');
                 } else {
                         $('#cssmenu').css({position: 'static', top: '0px'});
-                        $('#cssmenu').css('display', 'none');
+                        $('#cssmenu').css('display', 'block');
                 }
         });
   });
