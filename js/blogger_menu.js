@@ -114,16 +114,16 @@ $(document).ready(function() {
 // Fixed menu
 $(function(){
         // Check the initial Poistion of the Sticky Header
-        var stickyHeaderTop = $('#PageList1').offset().top;
+        var stickyHeaderTop = $('#navbar').offset().top;
 
         $(window).scroll(function(){
                 if( $(window).scrollTop() > stickyHeaderTop ) {
-                        $('#PageList1').css({position: 'fixed', top: '0px'});
-                        $('#PageList1').css('display', 'block');
+                        $('#navbar').css({position: 'fixed', top: '0px'});
+                        $('#navbar').css('display', 'block');
                 } else {
 
-                        $('#PageList1').css({position: 'static', top: '0px'});
-                        $('#PageList1').css('display', 'block');
+                        $('#navbar').css({position: 'static', top: '0px'});
+                        $('#navbar').css('display', 'block');
 
                 }
         });
