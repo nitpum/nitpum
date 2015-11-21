@@ -118,11 +118,15 @@ $(function(){
 
         $(window).scroll(function(){
                 if( $(window).scrollTop() > stickyHeaderTop ) {
-                        $('#navbar').css({position: 'fixed', top: '0px'});
+                        $('#navbar').css({position: 'fixed', top: '0px', '-webkit-box-shadow': '0px 10px 21px -3px rgba(0,0,0,0.15)',
+                        '-moz-box-shadow': '0px 10px 21px -3px rgba(0,0,0,0.15)',
+                        'box-shadow': '0px 10px 21px -3px rgba(0,0,0,0.15)'});
                         $('#navbar').css('display', 'block');
                 } else {
 
-                        $('#navbar').css({position: 'static', top: '0px'});
+                        $('#navbar').css({position: 'static', top: '0px','-webkit-box-shadow': '0px 10px 21px -3px rgba(0,0,0,0)',
+                        '-moz-box-shadow': '0px 10px 21px -3px rgba(0,0,0,0)',
+                        'box-shadow': '0px 10px 21px -3px rgba(0,0,0,0)'});
                         $('#navbar').css('display', 'block');
 
                 }
