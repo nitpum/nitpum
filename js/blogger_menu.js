@@ -98,7 +98,7 @@ $(document).ready(function(){
 
 $(document).ready(function() {
   $("#PageList1").menumaker({
-    title: "Menu",
+    title: "TheBoyThePlay",
     format: "dropdown"
   });
 
