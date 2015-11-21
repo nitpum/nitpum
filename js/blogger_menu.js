@@ -97,12 +97,12 @@
 $(document).ready(function(){
 
 $(document).ready(function() {
-  $("#cssmenu").menumaker({
+  $("#PageList1").menumaker({
     title: "Menu",
     format: "dropdown"
   });
 
-  $("#cssmenu a").each(function() {
+  $("#PageList1 a").each(function() {
   	var linkTitle = $(this).text();
   	$(this).attr('data-title', linkTitle);
   });
@@ -114,15 +114,15 @@ $(document).ready(function() {
 // Fixed menu
 $(function(){
         // Check the initial Poistion of the Sticky Header
-        var stickyHeaderTop = $('#cssmenu').offset().top;
+        var stickyHeaderTop = $('#PageList1').offset().top;
 
         $(window).scroll(function(){
                 if( $(window).scrollTop() > stickyHeaderTop ) {
-                        $('#cssmenu').css({position: 'fixed', top: '0px'});
-                        $('#cssmenu').css('display', 'block');
+                        $('#PageList1').css({position: 'fixed', top: '0px'});
+                        $('#PageList1').css('display', 'block');
                 } else {
-                        $('#cssmenu').css({position: 'static', top: '0px'});
-                        $('#cssmenu').css('display', 'block');
+                        $('#PageList1').css({position: 'static', top: '0px'});
+                        $('#PageList1').css('display', 'block');
                 }
         });
   });
