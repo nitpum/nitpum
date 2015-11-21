@@ -121,8 +121,10 @@ $(function(){
                         $('#PageList1').css({position: 'fixed', top: '0px'});
                         $('#PageList1').css('display', 'block');
                 } else {
+
                         $('#PageList1').css({position: 'static', top: '0px'});
                         $('#PageList1').css('display', 'block');
+
                 }
         });
   });
