@@ -16,7 +16,7 @@
    id="svg9484"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="Background.svg">
+   sodipodi:docname="background.svg">
   <title
      id="title4530">TheBoyThePlay Blogger Background</title>
   <defs
@@ -1565,11 +1565,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.24748737"
-     inkscape:cx="369.20415"
-     inkscape:cy="434.56236"
+     inkscape:zoom="1.4"
+     inkscape:cx="377.33119"
+     inkscape:cy="500.31009"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="icon_1"
      showgrid="false"
      units="px"
      inkscape:window-width="1366"
@@ -1771,7 +1771,7 @@
            ry="1.28345" />
       </g>
       <image
-         style="fill:#b8f736;fill-opacity:1;stroke:#ffffff;stroke-opacity:1;filter:url(#filter8783)"
+         style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1;filter:url(#filter8783)"
          width="39.875"
          height="37.976189"
          preserveAspectRatio="none"
