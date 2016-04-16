@@ -1,0 +1,9 @@
+{
+    "name" : "nitpum_web_design",
+    "description" : "Web theme style and javascript",
+    "license": "MIT",
+    "repository": {
+        "type":"git",
+        "url" : "https://github.com/nitpum/nitpum.github.io"
+    }
+}
