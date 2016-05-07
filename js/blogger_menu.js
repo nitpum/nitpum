@@ -3,7 +3,7 @@
   $.fn.menumaker = function(options) {
       
       var cssmenu = $(this), settings = $.extend({
-        title: "TheBoyThePlay",
+        title: $('.brand').val(),
         format: "dropdown",
         breakpoint: 768,
         sticky: false
@@ -91,44 +91,38 @@
 
       });
   };
+  
+  
+  
 })(jQuery);
 
 (function($){
 $(document).ready(function(){
 
-$(document).ready(function() {
-  $("#PageList1").menumaker({
-    title: "TheBoyThePlay",
-    format: "dropdown"
+  $(document).ready(function() {
+    $("#PageList1").menumaker({
+      title: $('.brand').val(),
+      format: "dropdown"
+    });
+
+    $("#PageList1 a").each(function() {
+      var linkTitle = $(this).text();
+      $(this).attr('data-title', linkTitle);
+    });
   });
 
-  $("#PageList1 a").each(function() {
-  	var linkTitle = $(this).text();
-  	$(this).attr('data-title', linkTitle);
-  });
-});
+  // Check the initial Poistion of the Sticky Header 
+    var stickyHeaderTop = $('#navbar').offset().top;
+
+    $(window).scroll(function(){
+            if( $(window).scrollTop() > stickyHeaderTop ) {
+                    $('#navbar').addClass('fixed');
+                    $('#navbar').removeClass('static');
+            } else {
+                    $('#navbar').addClass('static');
+                    $('#navbar').removeClass('fixed');
+            }
+    });
 
 });
 })(jQuery);
-
-// Fixed menu
-$(function(){
-        // Check the initial Poistion of the Sticky Header
-        var stickyHeaderTop = $('#navbar').offset().top;
-
-        $(window).scroll(function(){
-                if( $(window).scrollTop() > stickyHeaderTop ) {
-                        $('#navbar').css({position: 'fixed', top: '0px', '-webkit-box-shadow': '0px 10px 21px -3px rgba(0,0,0,0.15)',
-                        '-moz-box-shadow': '0px 10px 21px -3px rgba(0,0,0,0.15)',
-                        'box-shadow': '0px 10px 21px -3px rgba(0,0,0,0.15)'});
-                        $('#navbar').css('display', 'block');
-                } else {
-
-                        $('#navbar').css({position: 'static', top: '0px','-webkit-box-shadow': '0px 10px 21px -3px rgba(0,0,0,0)',
-                        '-moz-box-shadow': '0px 10px 21px -3px rgba(0,0,0,0)',
-                        'box-shadow': '0px 10px 21px -3px rgba(0,0,0,0)'});
-                        $('#navbar').css('display', 'block');
-
-                }
-        });
-  });
